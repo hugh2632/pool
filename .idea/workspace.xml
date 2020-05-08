@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7f71991-c373-4379-81ff-75f95a469ea9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pool.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concurrencypool/concurrencypool.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/concurrencypool/concurrencypool_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pool_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pool.go" beforeDir="false" afterPath="$PROJECT_DIR$/pool.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pool_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pool_test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pool_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+            <state relative-caret-position="755">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
@@ -36,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pool.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="326">
+              <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -61,13 +59,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pool_test.go" />
         <option value="$PROJECT_DIR$/concurrencypool.go" />
         <option value="$PROJECT_DIR$/concurrencypool/concurrencypool_test.go" />
         <option value="$PROJECT_DIR$/go.mod" />
         <option value="$PROJECT_DIR$/concurrencypool/concurrencypool.go" />
-        <option value="$PROJECT_DIR$/pool.go" />
         <option value="$PROJECT_DIR$/concurrencypool_test.go" />
+        <option value="$PROJECT_DIR$/pool.go" />
+        <option value="$PROJECT_DIR$/pool_test.go" />
       </list>
     </option>
   </component>
@@ -82,6 +80,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -93,7 +92,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -124,7 +122,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.BenchmarkConcurrencyPool_Run in github.com/hugh2632/pool">
+  <component name="RunManager" selected="Go Test.TestConcurrencyPool_Run in github.com/hugh2632/pool">
     <configuration name="BenchmarkConcurrencyPool_Run in github.com/hugh2632/concurrencypool/concurrencypool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="pool" />
       <working_directory value="$PROJECT_DIR$/concurrencypool" />
@@ -147,6 +145,17 @@
       <pattern value="^BenchmarkConcurrencyPool_Run$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestConcurrencyPool_Run in github.com/hugh2632/pool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="pool" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/hugh2632/pool" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestConcurrencyPool_Run$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestConcurrencyPool_Run in pool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="pool" />
       <working_directory value="$PROJECT_DIR$" />
@@ -156,8 +165,21 @@
       <pattern value="^TestConcurrencyPool_Run$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestConcurrencyPool_Run2 in github.com/hugh2632/pool" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="pool" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/hugh2632/pool" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestConcurrencyPool_Run2$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestConcurrencyPool_Run in github.com/hugh2632/pool" />
+        <item itemvalue="Go Test.TestConcurrencyPool_Run2 in github.com/hugh2632/pool" />
         <item itemvalue="Go Test.BenchmarkConcurrencyPool_Run in github.com/hugh2632/pool" />
         <item itemvalue="Go Test.BenchmarkConcurrencyPool_Run in github.com/hugh2632/concurrencypool/concurrencypool" />
         <item itemvalue="Go Test.TestConcurrencyPool_Run in pool" />
@@ -165,26 +187,47 @@
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="TestConcurrencyPool_Run_in_pool - 2020.04.28 at 10h 36m 13s.xml">
-      <configuration name="TestConcurrencyPool_Run in pool" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestConcurrencyPool_Run_in_github_com_hugh2632_pool - 2020.05.08 at 12h 42m 26s.xml">
+      <configuration name="TestConcurrencyPool_Run in github.com/hugh2632/pool" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="BenchmarkConcurrencyPool_Run_in_github_com_hugh2632_concurrencypool_concurrencypool - 2020.05.08 at 11h 28m 30s.xml">
-      <configuration name="BenchmarkConcurrencyPool_Run in github.com/hugh2632/concurrencypool/concurrencypool" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestConcurrencyPool_Run_in_github_com_hugh2632_pool - 2020.05.08 at 12h 43m 48s.xml">
+      <configuration name="TestConcurrencyPool_Run in github.com/hugh2632/pool" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="BenchmarkConcurrencyPool_Run_in_github_com_hugh2632_pool - 2020.05.08 at 11h 43m 24s.xml">
-      <configuration name="BenchmarkConcurrencyPool_Run in github.com/hugh2632/pool" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestConcurrencyPool_Run_in_github_com_hugh2632_pool - 2020.05.08 at 12h 47m 37s.xml">
+      <configuration name="TestConcurrencyPool_Run in github.com/hugh2632/pool" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestConcurrencyPool_Run_in_github_com_hugh2632_pool - 2020.05.08 at 12h 48m 09s.xml">
+      <configuration name="TestConcurrencyPool_Run in github.com/hugh2632/pool" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestConcurrencyPool_Run_in_github_com_hugh2632_pool - 2020.05.08 at 12h 51m 57s.xml">
+      <configuration name="TestConcurrencyPool_Run in github.com/hugh2632/pool" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestConcurrencyPool_Run_in_github_com_hugh2632_pool - 2020.05.08 at 12h 52m 22s.xml">
+      <configuration name="TestConcurrencyPool_Run in github.com/hugh2632/pool" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestConcurrencyPool_Run_in_github_com_hugh2632_pool - 2020.05.08 at 12h 53m 19s.xml">
+      <configuration name="TestConcurrencyPool_Run in github.com/hugh2632/pool" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestConcurrencyPool_Run_in_github_com_hugh2632_pool - 2020.05.08 at 12h 54m 21s.xml">
+      <configuration name="TestConcurrencyPool_Run in github.com/hugh2632/pool" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestConcurrencyPool_Run2_in_github_com_hugh2632_pool - 2020.05.08 at 12h 55m 33s.xml">
+      <configuration name="TestConcurrencyPool_Run2 in github.com/hugh2632/pool" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestConcurrencyPool_Run_in_github_com_hugh2632_pool - 2020.05.08 at 12h 56m 34s.xml">
+      <configuration name="TestConcurrencyPool_Run in github.com/hugh2632/pool" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27006507" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40347072" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -208,6 +251,7 @@
     <proxy>https://www.goproxy.io/</proxy>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/concurrencypool/concurrencypool.go" />
     <entry file="file://$PROJECT_DIR$/go.mod">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -215,24 +259,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/concurrencypool/concurrencypool.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pool.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="326">
+          <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pool_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        <state relative-caret-position="755">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>

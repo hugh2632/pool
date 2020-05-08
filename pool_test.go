@@ -9,15 +9,24 @@ import (
 func TestConcurrencyPool_Run(t *testing.T) {
 	var p ConcurrencyPool
 	p.Initial(5)
-	for i := 0; i < 100; i++ {
+	go func() {
+		for{
+			time.Sleep(100 * time.Millisecond)
+			fmt.Println(p.GetIdleCout())
+		}
+
+	}()
+	for i := 0; i < 5; i++ {
 		go func(j int) {
 			p.Run(func() error {
 				fmt.Println("数字是:", j, "时间:", time.Now())
-				time.Sleep(time.Second)
+				time.Sleep(time.Second * time.Duration(j))
+				fmt.Println("数字是:", j, "OK时间:", time.Now())
 				return nil
 			})
 		}(i)
 	}
+
 	select {}
 }
 
