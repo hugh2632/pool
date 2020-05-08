@@ -10,7 +10,7 @@ func TestConcurrencyPool_Run(t *testing.T) {
 	var p ConcurrencyPool
 	p.Initial(5)
 	go func() {
-		for{
+		for {
 			time.Sleep(100 * time.Millisecond)
 			fmt.Println(p.GetIdleCount())
 		}
@@ -18,12 +18,11 @@ func TestConcurrencyPool_Run(t *testing.T) {
 	}()
 	for i := 0; i < 5; i++ {
 		go func(j int) {
-			p.Run(func() error {
-				fmt.Println("数字是:", j, "时间:", time.Now())
-				time.Sleep(time.Second * time.Duration(j))
-				fmt.Println("数字是:", j, "OK时间:", time.Now())
-				return nil
-			})
+			p.Wait()
+			fmt.Println("数字是:", j, "时间:", time.Now())
+			time.Sleep(time.Second * time.Duration(j))
+			fmt.Println("数字是:", j, "OK时间:", time.Now())
+			p.Done()
 		}(i)
 	}
 
@@ -37,11 +36,10 @@ func BenchmarkConcurrencyPool_Run(b *testing.B) {
 			p.Initial(5)
 			for i := 0; i < 100; i++ {
 				go func(j int) {
-					p.Run(func() error {
-						fmt.Println("数字是:", j, "时间:", time.Now())
-						time.Sleep(time.Second)
-						return nil
-					})
+					p.Wait()
+					fmt.Println("数字是:", j, "时间:", time.Now())
+					time.Sleep(time.Second)
+					p.Done()
 				}(i)
 			}
 		}
