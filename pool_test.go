@@ -47,3 +47,9 @@ func BenchmarkConcurrencyPool_Run(b *testing.B) {
 		}
 	})
 }
+
+func TestConcurrencyPool_Run2(t *testing.T) {
+	var p ConcurrencyPool
+	p.Initial(5)
+	t.Log(p.GetIdleCount())
+}

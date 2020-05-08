@@ -33,7 +33,7 @@ func (this *ConcurrencyPool) Initial(capacity int) *ConcurrencyPool {
 }
 
 func (this *ConcurrencyPool) GetIdleCount() int{
-	return this.capacity - len(this.worker)
+	return len(this.worker)
 }
 
 func (this *ConcurrencyPool) Run(f func() error) {
