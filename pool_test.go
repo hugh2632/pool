@@ -12,7 +12,7 @@ func TestConcurrencyPool_Run(t *testing.T) {
 	go func() {
 		for{
 			time.Sleep(100 * time.Millisecond)
-			fmt.Println(p.GetIdleCout())
+			fmt.Println(p.GetIdleCount())
 		}
 
 	}()
